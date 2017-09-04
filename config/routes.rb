@@ -4,14 +4,20 @@ Rails.application.routes.draw do
 
   get 'message/:id', to: 'message#show', as: 'show_message'
 
-  post '/message', to: 'message#create'
+  post '/messages', to: 'message#create'
 
-  get 'user/home', as: 'home'
 
-  get 'user/login', as: 'login'
 
-  post '/user', to: 'user#create'
+  get 'home', to: 'user#home', as: 'home'
 
-  get 'user/signup', as: 'signup'
+  get 'login', to: 'user#login', as: 'login'
+
+  post 'user', to: 'user#show'
+
+  get 'signup', to: 'user#signup', as: 'signup'
+
+  post '/users', to: 'user#create'
+
+  get 'logout', to: 'user#logout'
 
 end

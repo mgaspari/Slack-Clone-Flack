@@ -1,2 +1,5 @@
-<h1>Message#show</h1>
-<p>Find me in app/views/message/show.html.erb</p>
+<h1>Message with <%= @receiver.username %></h1>
+  <% @messages.flatten.each do |message| %>
+      <h4><%= message.sender.username %></h4>
+      <p><%= message.content %></p>
+  <% end %>

@@ -1,2 +1,8 @@
-<h1>User#signup</h1>
-<p>Find me in app/views/user/signup.html.erb</p>
+<h1>User Sign Up</h1>
+<%= form_for(@user) do |f| %>
+  <%= f.label :username, "Username" %><br>
+  <%= f.text_field :username %><br>
+  <%= f.label :password, "Password" %><br>
+  <%= f.text_field :password %><br>
+  <%= f.submit %>
+<% end %>
