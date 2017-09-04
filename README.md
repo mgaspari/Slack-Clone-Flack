@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# Slack-Clone-Flack
+Slack clone using ruby on rails
+>>>>>>> 7d533986d74b25a737054fce64f00bf9117c5b5c
